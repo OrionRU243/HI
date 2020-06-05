@@ -1,3 +1,5 @@
+using MvcMovie.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +10,17 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebApplication1.Data;
 
 namespace WebApplication1
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        private readonly IConfiguration configuration;
+
+        public Startup() => configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+
+        public Startup() => Configuration = configuration;
 
         public IConfiguration Configuration { get; }
 
@@ -24,6 +28,9 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<MvcMovieContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

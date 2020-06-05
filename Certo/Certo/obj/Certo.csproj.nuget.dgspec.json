@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\max99\\source\\repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj": {}
+    "C:\\Users\\max99\\Source\\Repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\max99\\source\\repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj": {
+    "C:\\Users\\max99\\Source\\Repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\max99\\source\\repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj",
+        "projectUniqueName": "C:\\Users\\max99\\Source\\Repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj",
         "projectName": "Certo",
-        "projectPath": "C:\\Users\\max99\\source\\repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj",
+        "projectPath": "C:\\Users\\max99\\Source\\Repos\\OrionRU243\\HI\\Certo\\Certo\\Certo.csproj",
         "packagesPath": "C:\\Users\\max99\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\max99\\source\\repos\\OrionRU243\\HI\\Certo\\Certo\\obj\\",
+        "outputPath": "C:\\Users\\max99\\Source\\Repos\\OrionRU243\\HI\\Certo\\Certo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
